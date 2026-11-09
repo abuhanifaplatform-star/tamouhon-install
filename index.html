@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f9f8">
+  <title>طموحون | الخطة التشغيلية</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./icons/icon-192.png">
+  <style>
+    * { box-sizing: border-box }
+    body { margin: 0; min-height: 100vh; min-height: 100svh; display: grid; place-items: center; padding: 24px; font: 16px/1.65 system-ui, sans-serif; background: #f2f9f8; color: #143d4d }
+    main { width: min(100%, 440px); border: 1px solid #d7e9e6; background: white; border-radius: 24px; padding: clamp(20px, 6vw, 36px); text-align: center }
+    img { width: 84px; height: 84px; border-radius: 20px }
+    h1 { margin: 5px 0 0; font-size: 2rem }
+    p { margin: 0; color: #365663 }
+    .primary { display: block; margin-top: 24px; padding: 11px 16px; border-radius: 12px; background: #006f69; color: white; text-decoration: none; font-weight: 700 }
+    details { margin-top: 20px; border-top: 1px solid #d7e9e6; padding-top: 14px; text-align: start; font-size: .92rem }
+    summary { cursor: pointer; font-weight: 650 }
+    details p { margin-top: 8px }
+    :focus-visible { outline: 3px solid #00857b; outline-offset: 3px }
+    @media (display-mode: standalone) { details { display: none } }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./icons/icon-192.png" alt="" width="84" height="84">
+    <h1>طموحون</h1>
+    <p>الخطة التشغيلية ١٤٤٨–١٤٤٩هـ</p>
+    <p>مدرسة الإمام أبي حنيفة الابتدائية والمتوسطة</p>
+    <!-- لتغيير وجهة الاختصار، حدّث رابط التطبيق المنشور في السطر التالي. -->
+    <a class="primary" href="https://script.google.com/macros/s/AKfycbxxKmg6UJP1DUpoK6J7UQw1d6qflKIUbwq-YrpwyCtYojsPoyfmhw_hgPX03TSWKVRb/exec">فتح طموحون</a>
+    <details>
+      <summary>إضافة طموحون إلى شاشة الجوال</summary>
+      <p><strong>آيفون</strong> افتح هذه الصفحة في Safari، ثم اختر «مشاركة» ← «إضافة إلى الشاشة الرئيسية».</p>
+      <p><strong>أندرويد</strong> افتح هذه الصفحة في Chrome، ثم من قائمة المتصفح اختر «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية».</p>
+    </details>
+  </main>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').catch(console.warn);
+    }
+  </script>
+</body>
+</html>
